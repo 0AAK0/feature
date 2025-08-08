@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Features Component</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="crm-features-wrapper">
+    <div class="component-container">
+        <div class="content-wrapper">
+            <!-- Left side - Media/Video -->
+            <div class="media-section">
+                <div class="media-container">
+                    <div class="media-item active" data-feature="1">
+                        <div class="media-background" style="background-image: url('https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6894a9d5e6672f82e84a8974.png');">
+                            <video class="feature-video" muted loop preload="metadata" controls style="display: none;">
+                                <source src="https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6895d210589b447cacb9a1ae.mp4" type="video/mp4">
+                            </video>
+                            <div class="play-button" onclick="playVideo(this)">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.8)"/>
+                                    <path d="M23 20L42 30L23 40V20Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item" data-feature="2">
+                        <div class="media-background" style="background-image: url('https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6894a9d5050e80590239305e.png');">
+                            <video class="feature-video" muted loop preload="metadata" controls style="display: none;">
+                                <source src="https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6895d210589b447cacb9a1ae.mp4" type="video/mp4">
+                            </video>
+                            <div class="play-button" onclick="playVideo(this)">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.8)"/>
+                                    <path d="M23 20L42 30L23 40V20Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item" data-feature="3">
+                        <div class="media-background" style="background-image: url('https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6894a9d5e4748872c86edbd7.png');">
+                            <video class="feature-video" muted loop preload="metadata" controls style="display: none;">
+                                <source src="https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6895d210589b447cacb9a1ae.mp4" type="video/mp4">
+                            </video>
+                            <div class="play-button" onclick="playVideo(this)">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.8)"/>
+                                    <path d="M23 20L42 30L23 40V20Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-item" data-feature="4">
+                        <div class="media-background" style="background-image: url('https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6894a9d5efc26318661c9071.png');">
+                            <video class="feature-video" muted loop preload="metadata" controls style="display: none;">
+                                <source src="https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6895d210589b447cacb9a1ae.mp4" type="video/mp4">
+                            </video>
+                            <div class="play-button" onclick="playVideo(this)">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.8)"/>
+                                    <path d="M23 20L42 30L23 40V20Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side - Content -->
+            <div class="content-section">
+                <div class="main-content">
+                    <h1 class="main-title">Get set up fast and start closing deals.</h1>
+                    <p class="main-description">Flexible CRM plans tailored to your industry, workflow, team size, and business goals. Enjoy exclusive pricing for small businesses, beauty and wellness, coaching, mentoring, and rental services.</p>
+                    <button class="crm-feature-button">Try for free</button>
+                </div>
+
+                <div class="features-section">
+                    <div class="feature-item active" data-feature="1">
+                        <div class="feature-header">
+                            <div class="feature-indicator"></div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" onclick="toggleFeature(this)">Lead, Contact & Opportunity Management</h3>
+                            </div>
+                            <div class="feature-toggle" data-toggle="1">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="feature-expanded-content">
+                            <div class="feature-description">
+                                <p>Capture and manage leads from any channel. Track every interaction, organize your pipeline with clear deal stages, and keep your team aligned at every step.</p>
+                            </div>
+                            <div class="feature-media mobile-only">
+                                <div class="media-background" style="background-image: url('https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6894a9d5e6672f82e84a8974.png');">
+                                    <video class="feature-video" muted loop preload="metadata" controls style="display: none;">
+                                        <source src="https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6895d210589b447cacb9a1ae.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" onclick="playVideo(this)">
+                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                            <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.8)"/>
+                                            <path d="M23 20L42 30L23 40V20Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" data-feature="2">
+                        <div class="feature-header">
+                            <div class="feature-indicator"></div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" onclick="toggleFeature(this)">Advanced Marketing Automation</h3>
+                            </div>
+                            <div class="feature-toggle" data-toggle="2">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="feature-expanded-content">
+                            <div class="feature-description">
+                                <p>Plan, launch and manage multichannel campaigns from one dashboard. Create automated email sequences, send bulk SMS and WhatsApp messages, and manage Meta ads with AI doing the heavy lifting.</p>
+                            </div>
+                            <div class="feature-media mobile-only">
+                                <div class="media-background" style="background-image: url('https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6894a9d5050e80590239305e.png');">
+                                    <video class="feature-video" muted loop preload="metadata" controls style="display: none;">
+                                        <source src="https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6895d210589b447cacb9a1ae.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" onclick="playVideo(this)">
+                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                            <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.8)"/>
+                                            <path d="M23 20L42 30L23 40V20Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" data-feature="3">
+                        <div class="feature-header">
+                            <div class="feature-indicator"></div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" onclick="toggleFeature(this)">Smarter Services</h3>
+                            </div>
+                            <div class="feature-toggle" data-toggle="3">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="feature-expanded-content">
+                            <div class="feature-description">
+                                <p>Deliver a seamless experience with online booking, automated payments, and personalized service tools. Gain deeper insights with smart analytics, attract more leads, and streamline your customer journey. Built for businesses across industries.</p>
+                            </div>
+                            <div class="feature-media mobile-only">
+                                <div class="media-background" style="background-image: url('https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6894a9d5e4748872c86edbd7.png');">
+                                    <video class="feature-video" muted loop preload="metadata" controls style="display: none;">
+                                        <source src="https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6895d210589b447cacb9a1ae.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" onclick="playVideo(this)">
+                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                            <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.8)"/>
+                                            <path d="M23 20L42 30L23 40V20Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" data-feature="4">
+                        <div class="feature-header">
+                            <div class="feature-indicator"></div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" onclick="toggleFeature(this)">AI Employee</h3>
+                            </div>
+                            <div class="feature-toggle" data-toggle="4">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="feature-expanded-content">
+                            <div class="feature-description">
+                                <p>Meet your 24/7 digital employee. With built-in Voice AI, Conversation AI, Reviews AI, Funnel AI, Content AI, Workflow AI, and Ask AI, it handles calls, chats, content, reviews, funnels, and automations. Boost productivity, improve customer experience, and grow your business with zero guesswork.</p>
+                            </div>
+                            <div class="feature-media mobile-only">
+                                <div class="media-background" style="background-image: url('https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6894a9d5efc26318661c9071.png');">
+                                    <video class="feature-video" muted loop preload="metadata" controls style="display: none;">
+                                        <source src="https://storage.googleapis.com/msgsndr/hey6MGFFYO9no3oOFpO5/media/6895d210589b447cacb9a1ae.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" onclick="playVideo(this)">
+                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                            <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.8)"/>
+                                            <path d="M23 20L42 30L23 40V20Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function playVideo(button) {
+        const video = button.parentElement.querySelector('video');
+        if (video) {
+            video.style.display = 'block';
+            video.play().catch(e => console.log('Video play failed:', e));
+            button.style.display = 'none';
+        }
+    }
+
+    function toggleFeature(titleElement) {
+        const featureItem = titleElement.closest('.feature-item');
+        const featureNumber = featureItem.dataset.feature;
+        const isCurrentlyActive = featureItem.classList.contains('active');
+
+        if (isCurrentlyActive) {
+            // Collapse current feature
+            featureItem.classList.remove('active');
+            const correspondingMedia = document.querySelector(`.media-item[data-feature="${featureNumber}"]`);
+            if (correspondingMedia) {
+                correspondingMedia.classList.remove('active');
+            }
+            updateToggleIcon(featureItem, false);
+        } else {
+            // Expand clicked feature, collapse others
+            document.querySelectorAll('.crm-features-wrapper .feature-item').forEach(f => {
+                f.classList.remove('active');
+                updateToggleIcon(f, false);
+            });
+            document.querySelectorAll('.crm-features-wrapper .media-item').forEach(m => m.classList.remove('active'));
+
+            featureItem.classList.add('active');
+            const correspondingMedia = document.querySelector(`.media-item[data-feature="${featureNumber}"]`);
+            if (correspondingMedia) {
+                correspondingMedia.classList.add('active');
+            }
+            updateToggleIcon(featureItem, true);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const featureItems = document.querySelectorAll('.crm-features-wrapper .feature-item');
+        const mediaItems = document.querySelectorAll('.crm-features-wrapper .media-item');
+        const featureToggles = document.querySelectorAll('.crm-features-wrapper .feature-toggle');
+
+        function updateToggleIcon(item, isActive) {
+            const toggleSvg = item.querySelector('.feature-toggle svg');
+            if (isActive) {
+                // Show minus icon for active/expanded feature
+                toggleSvg.innerHTML = '<path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+            } else {
+                // Show plus icon for inactive/collapsed feature
+                toggleSvg.innerHTML = '<path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+            }
+        }
+
+        featureToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const featureItem = this.closest('.feature-item');
+                const featureNumber = featureItem.dataset.feature;
+                const isCurrentlyActive = featureItem.classList.contains('active');
+
+                if (isCurrentlyActive) {
+                    // Collapse current feature
+                    featureItem.classList.remove('active');
+                    const correspondingMedia = document.querySelector(`.media-item[data-feature="${featureNumber}"]`);
+                    if (correspondingMedia) {
+                        correspondingMedia.classList.remove('active');
+                    }
+                    updateToggleIcon(featureItem, false);
+                } else {
+                    // Expand clicked feature, collapse others
+                    featureItems.forEach(f => {
+                        f.classList.remove('active');
+                        updateToggleIcon(f, false);
+                    });
+                    mediaItems.forEach(m => m.classList.remove('active'));
+
+                    featureItem.classList.add('active');
+                    const correspondingMedia = document.querySelector(`.media-item[data-feature="${featureNumber}"]`);
+                    if (correspondingMedia) {
+                        correspondingMedia.classList.add('active');
+                    }
+                    updateToggleIcon(featureItem, true);
+                }
+            });
+        });
+
+        // Initialize toggle icons based on current state
+        featureItems.forEach(item => {
+            const isActive = item.classList.contains('active');
+            updateToggleIcon(item, isActive);
+        });
+
+        // Make updateToggleIcon globally accessible
+        window.updateToggleIcon = updateToggleIcon;
+    });
+</script>
+</body>
+</html>
