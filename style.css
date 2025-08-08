@@ -162,7 +162,8 @@
     border-bottom: 1px solid #e5e5e5;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+    padding: 8px 0;
 }
 
 .crm-features-wrapper .feature-item:last-child {
@@ -171,14 +172,14 @@
 }
 
 .crm-features-wrapper .feature-item.active {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .crm-features-wrapper .feature-header {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    padding: 4px 0;
+    padding: 0;
     position: relative;
 }
 
@@ -356,7 +357,7 @@
 
     .crm-features-wrapper .feature-header {
         gap: 12px;
-        padding: 4px 0;
+        padding: 0;
     }
 
     .crm-features-wrapper .component-container {
