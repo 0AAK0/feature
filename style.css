@@ -162,7 +162,7 @@
     border-bottom: 1px solid #e5e5e5;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
 }
 
 .crm-features-wrapper .feature-item:last-child {
@@ -171,7 +171,7 @@
 }
 
 .crm-features-wrapper .feature-item.active {
-    margin-bottom: 40px;
+    margin-bottom: 8px;
 }
 
 .crm-features-wrapper .feature-header {
@@ -225,7 +225,7 @@
 .crm-features-wrapper .feature-item.active .feature-expanded-content {
     max-height: 400px;
     opacity: 1;
-    margin-top: 40px;
+    margin-top: 8px;
 }
 
 .crm-features-wrapper .feature-description {
