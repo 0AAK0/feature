@@ -216,8 +216,16 @@
         const video = button.parentElement.querySelector('video');
         if (video) {
             video.style.display = 'block';
-            video.play().catch(e => console.log('Video play failed:', e));
-            button.style.display = 'none';
+            video.controls = true;
+            // Remove the loop and autoplay for better control
+            video.muted = false;
+            video.play().then(() => {
+                button.style.display = 'none';
+            }).catch(e => {
+                console.log('Video play failed:', e);
+                // If autoplay fails, show controls and hide button anyway
+                button.style.display = 'none';
+            });
         }
     }
 
@@ -232,6 +240,15 @@
             const correspondingMedia = document.querySelector(`.media-item[data-feature="${featureNumber}"]`);
             if (correspondingMedia) {
                 correspondingMedia.classList.remove('active');
+                // Reset any playing videos when collapsing
+                const videos = correspondingMedia.querySelectorAll('video');
+                videos.forEach(video => {
+                    video.pause();
+                    video.style.display = 'none';
+                    video.currentTime = 0;
+                });
+                const playButtons = correspondingMedia.querySelectorAll('.play-button');
+                playButtons.forEach(btn => btn.style.display = 'block');
             }
             updateToggleIcon(featureItem, false);
         } else {
@@ -240,7 +257,18 @@
                 f.classList.remove('active');
                 updateToggleIcon(f, false);
             });
-            document.querySelectorAll('.crm-features-wrapper .media-item').forEach(m => m.classList.remove('active'));
+            document.querySelectorAll('.crm-features-wrapper .media-item').forEach(m => {
+                m.classList.remove('active');
+                // Reset videos in all media items
+                const videos = m.querySelectorAll('video');
+                videos.forEach(video => {
+                    video.pause();
+                    video.style.display = 'none';
+                    video.currentTime = 0;
+                });
+                const playButtons = m.querySelectorAll('.play-button');
+                playButtons.forEach(btn => btn.style.display = 'block');
+            });
 
             featureItem.classList.add('active');
             const correspondingMedia = document.querySelector(`.media-item[data-feature="${featureNumber}"]`);
@@ -280,6 +308,15 @@
                     const correspondingMedia = document.querySelector(`.media-item[data-feature="${featureNumber}"]`);
                     if (correspondingMedia) {
                         correspondingMedia.classList.remove('active');
+                        // Reset any playing videos when collapsing
+                        const videos = correspondingMedia.querySelectorAll('video');
+                        videos.forEach(video => {
+                            video.pause();
+                            video.style.display = 'none';
+                            video.currentTime = 0;
+                        });
+                        const playButtons = correspondingMedia.querySelectorAll('.play-button');
+                        playButtons.forEach(btn => btn.style.display = 'block');
                     }
                     updateToggleIcon(featureItem, false);
                 } else {
@@ -288,7 +325,18 @@
                         f.classList.remove('active');
                         updateToggleIcon(f, false);
                     });
-                    mediaItems.forEach(m => m.classList.remove('active'));
+                    mediaItems.forEach(m => {
+                        m.classList.remove('active');
+                        // Reset videos in all media items
+                        const videos = m.querySelectorAll('video');
+                        videos.forEach(video => {
+                            video.pause();
+                            video.style.display = 'none';
+                            video.currentTime = 0;
+                        });
+                        const playButtons = m.querySelectorAll('.play-button');
+                        playButtons.forEach(btn => btn.style.display = 'block');
+                    });
 
                     featureItem.classList.add('active');
                     const correspondingMedia = document.querySelector(`.media-item[data-feature="${featureNumber}"]`);

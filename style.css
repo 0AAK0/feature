@@ -62,17 +62,17 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .crm-features-wrapper .feature-gif {
     position: absolute;
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    width: calc(100% - 24px);
-    height: calc(100% - 24px);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
     object-fit: cover;
     z-index: 2;
     border-radius: 12px;
@@ -81,12 +81,12 @@
 
 .crm-features-wrapper .feature-video {
     position: absolute;
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    width: calc(100% - 24px);
-    height: calc(100% - 24px);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
     object-fit: cover;
     z-index: 2;
     border-radius: 12px;
@@ -171,7 +171,7 @@
 }
 
 .crm-features-wrapper .feature-item.active {
-    margin-bottom: 8px;
+    margin-bottom: 40px;
 }
 
 .crm-features-wrapper .feature-header {
@@ -225,7 +225,7 @@
 .crm-features-wrapper .feature-item.active .feature-expanded-content {
     max-height: 400px;
     opacity: 1;
-    margin-top: 16px;
+    margin-top: 40px;
 }
 
 .crm-features-wrapper .feature-description {
@@ -274,7 +274,7 @@
 }
 
 .crm-features-wrapper .mobile-only .media-background {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .crm-features-wrapper .mobile-only .feature-gif {
@@ -361,5 +361,9 @@
 
     .crm-features-wrapper .component-container {
         background: transparent;
+    }
+
+    .crm-features-wrapper .mobile-only .feature-media {
+        height: 280px;
     }
 }
