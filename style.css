@@ -1,5 +1,32 @@
 /* features results */
-.crm-features-wrapper * {
+.crm-features-wrapper,
+.crm-features-wrapper .component-container,
+.crm-features-wrapper .content-wrapper,
+.crm-features-wrapper .media-section,
+.crm-features-wrapper .media-container,
+.crm-features-wrapper .media-item,
+.crm-features-wrapper .media-background,
+.crm-features-wrapper .feature-gif,
+.crm-features-wrapper .feature-video,
+.crm-features-wrapper .play-button,
+.crm-features-wrapper .content-section,
+.crm-features-wrapper .main-content,
+.crm-features-wrapper .main-title,
+.crm-features-wrapper .main-description,
+.crm-features-wrapper .crm-feature-button,
+.crm-features-wrapper .features-section,
+.crm-features-wrapper .feature-item,
+.crm-features-wrapper .feature-header,
+.crm-features-wrapper .feature-indicator,
+.crm-features-wrapper .feature-content,
+.crm-features-wrapper .feature-title,
+.crm-features-wrapper .feature-expanded-content,
+.crm-features-wrapper .feature-description,
+.crm-features-wrapper .feature-description p,
+.crm-features-wrapper .feature-toggle,
+.crm-features-wrapper .feature-toggle svg,
+.crm-features-wrapper .feature-media,
+.crm-features-wrapper .mobile-only {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +48,7 @@
 .crm-features-wrapper .content-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
-    gap: 80px;
+    gap: 30px;
     align-items: flex-start;
 }
 
@@ -151,7 +178,7 @@
     border: 1px solid #055f47;
 }
 
-/* Features Section */
+/* Features Section - COMPLETELY REWRITTEN FOR MINIMAL SPACING */
 .crm-features-wrapper .features-section {
     display: flex;
     flex-direction: column;
@@ -162,38 +189,41 @@
     border-bottom: 1px solid #e5e5e5;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 40px;
+    padding: 8px 0;
+    margin: 8px 0;
 }
 
 .crm-features-wrapper .feature-item:last-child {
     border-bottom: none;
-    margin-bottom: 0;
 }
 
 .crm-features-wrapper .feature-item.active {
-    margin-bottom: 40px;
+    padding: 8px 0;
+    margin: 8px 0;
 }
 
 .crm-features-wrapper .feature-header {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    padding: 16px 0;
+    padding: 0;
+    margin: 0;
     position: relative;
 }
 
 .crm-features-wrapper .feature-indicator {
     width: 4px;
-    height: 120px;
+    height: 40px;
     background-color: transparent;
     border-radius: 2px;
     margin-top: 4px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, height 0.3s ease;
     flex-shrink: 0;
 }
 
 .crm-features-wrapper .feature-item.active .feature-indicator {
     background-color: #055f47;
+    height: 100px;
 }
 
 .crm-features-wrapper .feature-content {
@@ -201,11 +231,12 @@
 }
 
 .crm-features-wrapper .feature-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #000;
     line-height: 1.3;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     transition: color 0.3s ease;
     cursor: pointer;
 }
@@ -219,17 +250,22 @@
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 0;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
 }
 
 .crm-features-wrapper .feature-item.active .feature-expanded-content {
     max-height: 400px;
     opacity: 1;
-    margin-top: 40px;
+    margin-top: 15px;
+    padding: 0;
+    padding-bottom: 8px;
 }
 
 .crm-features-wrapper .feature-description {
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .crm-features-wrapper .feature-description p {
@@ -237,6 +273,8 @@
     font-weight: 400;
     color: #696774;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 .crm-features-wrapper .feature-toggle {
@@ -317,7 +355,7 @@
     }
 
     .crm-features-wrapper .feature-title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .crm-features-wrapper .media-container {
@@ -343,7 +381,7 @@
     }
 
     .crm-features-wrapper .feature-title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .crm-features-wrapper .media-section {
@@ -354,16 +392,99 @@
         display: block;
     }
 
+    /* MOBILE SPECIFIC SPACING FIXES - COMPONENT ONLY */
+    .crm-features-wrapper .feature-item {
+        padding: 6px 0;
+        margin: 8px 0;
+    }
+
+    .crm-features-wrapper .feature-item.active {
+        padding: 6px 0;
+        margin: 8px 0;
+    }
+
     .crm-features-wrapper .feature-header {
         gap: 12px;
-        padding: 16px 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .crm-features-wrapper .feature-indicator {
+        height: 30px;
+    }
+
+    .crm-features-wrapper .feature-item.active .feature-indicator {
+        height: 80px;
+    }
+
+    .crm-features-wrapper .feature-expanded-content {
+        margin-left: 18px;
+    }
+
+    .crm-features-wrapper .feature-item.active .feature-expanded-content {
+        max-height: 600px !important;
+        overflow: visible !important;
+        margin-top: 15px;
+        padding-bottom: 24px;
     }
 
     .crm-features-wrapper .component-container {
         background: transparent;
     }
 
+    /* MOBILE VIDEO FIX - COMPONENT ONLY, LOWERED Z-INDEX */
     .crm-features-wrapper .mobile-only .feature-media {
-        height: 280px;
+        height: 300px !important;
+        overflow: hidden !important;
+        border-radius: 15px;
+        position: relative;
+        background: #f0f0f0;
+    }
+
+    .crm-features-wrapper .mobile-only .media-background {
+        width: 100% !important;
+        height: 100% !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+        opacity: 1 !important;
+    }
+
+    .crm-features-wrapper .mobile-only .feature-video {
+        position: absolute !important;
+        top: 12px !important;
+        left: 12px !important;
+        right: 12px !important;
+        bottom: 12px !important;
+        width: calc(100% - 24px) !important;
+        height: calc(100% - 24px) !important;
+        object-fit: cover !important;
+        border-radius: 12px !important;
+        z-index: 1 !important;
+        opacity: 1 !important;
+    }
+
+    .crm-features-wrapper .mobile-only .feature-gif {
+        position: absolute !important;
+        top: 12px !important;
+        left: 12px !important;
+        right: 12px !important;
+        bottom: 12px !important;
+        width: calc(100% - 24px) !important;
+        height: calc(100% - 24px) !important;
+        object-fit: cover !important;
+        border-radius: 12px !important;
+        z-index: 1 !important;
+        opacity: 1 !important;
+    }
+
+    .crm-features-wrapper .mobile-only .play-button {
+        position: relative !important;
+        z-index: 2 !important;
+        opacity: 1 !important;
     }
 }
